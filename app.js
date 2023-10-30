@@ -24,8 +24,7 @@ const knex = Knex({
     password: DB_PASS,
     database: DB_NAME,
     port: DB_PORT
-  },
-  debug: true
+  }
 });
 
 let isAuthenticated = false;
