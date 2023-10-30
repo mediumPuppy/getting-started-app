@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+</head>
+<body>
+  <h1>Dashboard</h1>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>CustFirstName</th>
+        <th>CustLastName</th>
+        <th>CustStreetAddress</th>
+        <th>CustCity</th>
+        <th>CustState</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.forEach((row) => { %>
+        <tr>
+          <td><%= row.CustFirstName %></td>
+          <td><%= row.CustLastName %></td>
+          <td><%= row.CustStreetAddress %></td>
+          <td><%= row.CustCity %></td>
+          <td><%= row.CustState %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</body>
+</html>
